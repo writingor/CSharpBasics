@@ -91,7 +91,7 @@ else
     Console.WriteLine("Buying!");
 }
 
-// NOT
+// NOT !
 
 if (!(minPrice > price || price > money))
 {
