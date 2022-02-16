@@ -16,6 +16,7 @@ namespace HelloWorld
 
                 Console.BackgroundColor = ConsoleColor.DarkGray;
                 Console.WriteLine("Press any key to close the program:");
+
                 Console.ReadKey();
             }
         }
