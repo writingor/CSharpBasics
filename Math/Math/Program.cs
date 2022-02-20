@@ -1,7 +1,18 @@
 ﻿
 
+// All math with type less than int returns INTEGER!
+// All math with type less than int returns INTEGER!
+// All math with type less than int returns INTEGER!
+
 byte b1, b2;
 b1 = 10; b2 = 2;
+
+byte backToByte = (byte)(b1 + b2);
+
+Console.WriteLine(backToByte);
+
+++b1;
+Console.WriteLine(b1);
 
 
 // %
