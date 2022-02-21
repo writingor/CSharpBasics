@@ -31,7 +31,12 @@ Console.WriteLine(toIntCasting);
 // IN BYTE 255 is 1111 1111, IN SBYTE -1 is 1111 1111 
 // 0111 1111 is 127
 // 1111 1111 is -128
-// 
+//
+// 0000 0011 is 3
+// use NOT ~
+// 1111 1100 is -4
+// sum 1 (0000 0001)
+// result: 1111 1101 is -3
 
 byte toByteCasting = (byte) toIntCasting;
 
