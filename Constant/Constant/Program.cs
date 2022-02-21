@@ -27,6 +27,11 @@ Console.WriteLine(toIntCasting);
 // 256 is  1000 0000  0000 0000  0000 0001  0000 0000 and byte is 0000 0000
 // 257 is  1000 0000  0000 0000  0000 0001  0000 0001 and byte is ... 1111 1111 WHY?
 // 267 is  1000 0000  0000 0000  0000 0001  0000 1011 and byte is ... 1111 0101 WHY?
+// BECAUSE IN SIGNED DATA TYPE FIRST BIT FROM LEFT IS PLUS (0) OR MINUS (1)
+// IN BYTE 255 is 1111 1111, IN SBYTE -1 is 1111 1111 
+// 0111 1111 is 127
+// 1111 1111 is -128
+// 
 
 byte toByteCasting = (byte) toIntCasting;
 

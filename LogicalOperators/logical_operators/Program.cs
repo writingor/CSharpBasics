@@ -115,7 +115,7 @@ Console.Write("Enter the price of the item: ");
 int price = int.Parse(Console.ReadLine());
 
 
-// AND &&
+// Conjunction (AND &&)
 
 if (minPrice <= price && price <= money)
     Console.WriteLine("Buying!");
@@ -123,13 +123,28 @@ else
     Console.WriteLine("No thanks!");
 
 
-// OR ||
+// Disjunction (OR ||)
 
 if (minPrice > price || price > money)
     Console.WriteLine("No thanks!");
 else
     Console.WriteLine("Buying!");
 
+// Exception with disjuction ( XOR ^ )
+
+// true ^ true = false
+// true ^ false || false ^ true = true
+// false ^ false = false
+
+byte small = 10;
+byte big = 200;
+
+byte sizeOfBall = small;
+
+if (sizeOfBall == big ^ sizeOfBall == small)
+    Console.WriteLine($"sizeOfBall = {sizeOfBall}");
+else
+    Console.WriteLine($"A ball cannot weigh too much and too little at the same time.");
 
 // NOT !
 
