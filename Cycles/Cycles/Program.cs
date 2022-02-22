@@ -49,7 +49,7 @@ Console.Clear();
 
 // foreach
 
-string[] animals = new string[7] { "Cat", "Mouse", "Crown", "Whorse", "Dog", "Lion", "Rabbit" };
+string[] animals = new string[7] { "Cat", "Mouse", "Crow", "Horse", "Dog", "Lion", "Rabbit" };
 
 foreach (string animal in animals)
 {
