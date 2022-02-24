@@ -58,6 +58,29 @@ SayHelloInYellowLetters("Hello!");
 
 
 
+#region Args
+
+
+// It takes NO parameters and do not return a result.
+
+static void SayHelloOne(string hello = "default", int one = 0)
+{
+    Console.WriteLine(hello + " " + one);
+}
+
+SayHelloOne(one: 1, hello: "Hello");
+SayHelloOne("Hello", 1);
+SayHelloOne();
+SayHelloOne("Hello");
+SayHelloOne(one: 1);
+
+
+
+
+#endregion
+
+
+
 #region Method with reference
 
 
@@ -124,3 +147,4 @@ Console.WriteLine("After calling MethodWithOut() inputTwo = {0}, result(from ret
 Console.ForegroundColor = ConsoleColor.White;
 
 #endregion
+
