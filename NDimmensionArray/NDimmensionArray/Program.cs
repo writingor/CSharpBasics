@@ -22,9 +22,9 @@ for (int i = 0; i < 3; i++)
     }
 }
 
-for (int i = 0; i < 3; i++)  // i < twoDimmensionArray.GetLength(i) not have more array
+for (int i = 0; i < twoDimmensionArray.GetLength(0); i++) // first dimmension is 0
 {
-    for (int n = 0; n < 3; n++)  
+    for (int n = 0; n < twoDimmensionArray.GetLength(1); n++)  // second dimmension is 1
     {
         Console.Write("{0} ", twoDimmensionArray[i, n]);
     }
